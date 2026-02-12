@@ -45,7 +45,7 @@
             right: 0;
         }
         
-        /* 头部区域 */
+        /* 头部 */
         .header {
             padding: 35px 50px;
             display: flex;
@@ -91,7 +91,7 @@
             100% { transform: rotate(30deg) translateX(100%); }
         }
         
-        /* 优化提示语显示 */
+        /* 提示语显示 */
         .tip-line {
             display: block;
             padding: 8px 0;
@@ -115,7 +115,7 @@
             font-family: 'Arial', sans-serif;
         }
         
-        /* 内容区域 - 新布局 */
+        /* 内容区域 */
         .content-container {
             display: flex;
             flex: 1;
@@ -235,7 +235,7 @@
             font-size: 18px;
         }
         
-        /* 底部信息 */
+        /* 底部提示讯息 */
         .footer {
             padding: 25px;
             text-align: center;
@@ -246,7 +246,7 @@
             letter-spacing: 2px;
         }
         
-        /* 背景装饰元素 */
+        /* 背景装饰 */
         .bg-element {
             position: absolute;
             border-radius: 50%;
@@ -310,170 +310,6 @@
         .fullscreen-btn:active {
             transform: scale(0.95);
         }
-        
-        /* 设置按钮 */
-        .settings-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 100px;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #4dabf7, #1a7fdb);
-            border: none;
-            color: white;
-            font-size: 28px;
-            cursor: pointer;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s ease;
-            z-index: 1000;
-        }
-        .settings-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-            background: linear-gradient(135deg, #5cb0ff, #2a8feb);
-        }
-        .settings-btn:active {
-            transform: scale(0.95);
-        }
-        
-        /* 设置弹窗样式 */
-        .settings-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            z-index: 2000;
-            justify-content: center;
-            align-items: center;
-        }
-        .modal-content {
-            background: linear-gradient(145deg, #1a2a6c, #2a4365);
-            border-radius: 20px;
-            width: 500px;
-            max-width: 90%;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            overflow: hidden;
-        }
-        .modal-header {
-            background: rgba(0, 30, 60, 0.8);
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .modal-header h2 {
-            color: #4dabf7;
-            margin: 0;
-            font-size: 24px;
-        }
-        .close-btn {
-            background: none;
-            border: none;
-            color: #a3d4ff;
-            font-size: 30px;
-            cursor: pointer;
-            padding: 0;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s ease;
-        }
-        .close-btn:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: scale(1.1);
-        }
-        .modal-body {
-            padding: 30px;
-        }
-        .setting-item {
-            margin-bottom: 25px;
-        }
-        .setting-item label {
-            display: block;
-            color: #a3d4ff;
-            margin-bottom: 8px;
-            font-size: 16px;
-        }
-        .setting-item input[type="text"],
-        .setting-item input[type="number"] {
-            width: 100%;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid rgba(100, 180, 255, 0.3);
-            background: rgba(0, 20, 40, 0.5);
-            color: white;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-        .setting-item input:focus {
-            outline: none;
-            border-color: #4dabf7;
-            box-shadow: 0 0 10px rgba(77, 171, 247, 0.3);
-        }
-        .server-examples {
-            margin-top: 5px;
-            color: #8a9ba8;
-            font-size: 14px;
-        }
-        .status-indicator {
-            background: rgba(0, 20, 40, 0.5);
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid rgba(100, 180, 255, 0.2);
-        }
-        #syncStatus {
-            color: #ff6b6b;
-            font-weight: bold;
-        }
-        #lastSyncTime {
-            display: block;
-            color: #8a9ba8;
-            font-size: 14px;
-            margin-top: 5px;
-        }
-        .setting-buttons {
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
-        }
-        .setting-buttons button {
-            flex: 1;
-            padding: 12px;
-            border: none;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .btn-test {
-            background: linear-gradient(135deg, #ffd43b, #f59e0b);
-            color: #1a2a6c;
-        }
-        .btn-sync {
-            background: linear-gradient(135deg, #51cf66, #37b24d);
-            color: white;
-        }
-        .btn-save {
-            background: linear-gradient(135deg, #4dabf7, #1a7fdb);
-            color: white;
-        }
-        .setting-buttons button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
     </style>
 </head>
 <body>
@@ -509,11 +345,11 @@
                     <div class="info-value">________--________</div>
                 </div>
                 <div class="info-item">
-                    <div class="info-label">试卷页数</div>
+                    <div class="info-label">试卷</div>
                     <div class="info-value">________张________页</div>
                 </div>
                 <div class="info-item">
-                    <div class="info-label">答题卡页数</div>
+                    <div class="info-label">答题卡</div>
                     <div class="info-value">________张________页</div>
                 </div>
             </div>            
@@ -525,60 +361,10 @@
                 </ul>
             </div>
         </div>
-        
-        <div class="footer">
-            考场纪律监督电话：1234567890 | 监考教师：张老师、李老师
-        </div>
-    </div>
-    
+
     <!-- 全屏按钮 -->
     <button class="fullscreen-btn" id="fullscreenBtn">⛶</button>
     
-    <!-- 设置按钮 -->
-    <button class="settings-btn" id="settingsBtn">⚙️</button>
-    
-    <!-- NTP设置弹窗 -->
-    <div class="settings-modal" id="settingsModal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>时间同步设置</h2>
-                <button class="close-btn" id="closeSettings">×</button>
-            </div>
-            <div class="modal-body">
-                <div class="setting-item">
-                    <label for="ntpServer">NTP服务器地址：</label>
-                    <input type="text" id="ntpServer" placeholder="例如：time.windows.com">
-                    <div class="server-examples">
-                        <small>常用NTP服务器：time.windows.com, time.nist.gov, ntp.aliyun.com</small>
-                    </div>
-                </div>
-                
-                <div class="setting-item">
-                    <label for="syncInterval">同步间隔（分钟）：</label>
-                    <input type="number" id="syncInterval" min="1" max="1440" value="5">
-                </div>
-                
-                <div class="setting-item">
-                    <label for="autoSync">自动同步：</label>
-                    <input type="checkbox" id="autoSync" checked>
-                </div>
-                
-                <div class="setting-item">
-                    <label>当前状态：</label>
-                    <div class="status-indicator">
-                        <span id="syncStatus">未同步</span>
-                        <span id="lastSyncTime"></span>
-                    </div>
-                </div>
-                
-                <div class="setting-buttons">
-                    <button class="btn-test" id="testNTP">测试连接</button>
-                    <button class="btn-sync" id="manualSync">立即同步</button>
-                    <button class="btn-save" id="saveSettings">保存设置</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script>
         function updateTime() {
@@ -647,95 +433,6 @@
             }
         }
         
-        // NTP设置功能
-        const settingsBtn = document.getElementById('settingsBtn');
-        const settingsModal = document.getElementById('settingsModal');
-        const closeSettings = document.getElementById('closeSettings');
-        const saveSettingsBtn = document.getElementById('saveSettings');
-        const testNTPBtn = document.getElementById('testNTP');
-        const manualSyncBtn = document.getElementById('manualSync');
-
-        // 默认NTP服务器设置
-        const defaultSettings = {
-            ntpServer: 'ntp.aliyun.com',
-            syncInterval: 5,
-            autoSync: true,
-            lastSync: null
-        };
-
-        // 加载保存的设置
-        function loadSettings() {
-            const saved = localStorage.getItem('ntpSettings');
-            return saved ? JSON.parse(saved) : defaultSettings;
-        }
-
-        // 保存设置
-        function saveSettings(settings) {
-            localStorage.setItem('ntpSettings', JSON.stringify(settings));
-        }
-
-        // 更新状态显示
-        function updateStatusDisplay() {
-            const settings = loadSettings();
-            const statusElement = document.getElementById('syncStatus');
-            const timeElement = document.getElementById('lastSyncTime');
-            
-            if (settings.lastSync) {
-                const lastSync = new Date(settings.lastSync);
-                statusElement.textContent = '已同步';
-                statusElement.style.color = '#51cf66';
-                timeElement.textContent = `上次同步：${lastSync.toLocaleString()}`;
-            } else {
-                statusElement.textContent = '未同步';
-                statusElement.style.color = '#ff6b6b';
-                timeElement.textContent = '';
-            }
-        }
-
-        // 模拟NTP时间同步
-        async function syncWithNTP(server) {
-            return new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    // 模拟网络延迟
-                    const success = Math.random() > 0.1; // 90%成功率
-                    
-                    if (success) {
-                        const now = new Date();
-                        const settings = loadSettings();
-                        settings.lastSync = now.toISOString();
-                        saveSettings(settings);
-                        updateStatusDisplay();
-                        resolve(now);
-                    } else {
-                        reject(new Error('NTP服务器连接失败'));
-                    }
-                }, 1000);
-            });
-        }
-
-        // 测试NTP服务器连接
-        async function testNTPConnection(server) {
-            try {
-                // 在实际应用中，这里应该使用真正的NTP协议
-                // 这里使用模拟实现
-                await new Promise(resolve => setTimeout(resolve, 800));
-                return true;
-            } catch (error) {
-                return false;
-            }
-        }
-
-        // 初始化设置界面
-        function initializeSettings() {
-            const settings = loadSettings();
-            
-            document.getElementById('ntpServer').value = settings.ntpServer;
-            document.getElementById('syncInterval').value = settings.syncInterval;
-            document.getElementById('autoSync').checked = settings.autoSync;
-            
-            updateStatusDisplay();
-        }
-
         // 事件监听
         settingsBtn.addEventListener('click', () => {
             settingsModal.style.display = 'flex';
@@ -745,96 +442,6 @@
         closeSettings.addEventListener('click', () => {
             settingsModal.style.display = 'none';
         });
-
-        // 点击弹窗外部关闭
-        settingsModal.addEventListener('click', (e) => {
-            if (e.target === settingsModal) {
-                settingsModal.style.display = 'none';
-            }
-        });
-
-        saveSettingsBtn.addEventListener('click', () => {
-            const settings = {
-                ntpServer: document.getElementById('ntpServer').value.trim(),
-                syncInterval: parseInt(document.getElementById('syncInterval').value),
-                autoSync: document.getElementById('autoSync').checked,
-                lastSync: loadSettings().lastSync
-            };
-            
-            saveSettings(settings);
-            alert('设置已保存！');
-            updateStatusDisplay();
-            startAutoSync(); // 重新启动自动同步
-        });
-
-        testNTPBtn.addEventListener('click', async () => {
-            const server = document.getElementById('ntpServer').value.trim();
-            if (!server) {
-                alert('请输入NTP服务器地址');
-                return;
-            }
-            
-            testNTPBtn.textContent = '测试中...';
-            testNTPBtn.disabled = true;
-            
-            const success = await testNTPConnection(server);
-            
-            testNTPBtn.textContent = '测试连接';
-            testNTPBtn.disabled = false;
-            
-            if (success) {
-                alert(`NTP服务器 ${server} 连接成功！`);
-            } else {
-                alert(`无法连接到NTP服务器 ${server}，请检查地址是否正确`);
-            }
-        });
-
-        manualSyncBtn.addEventListener('click', async () => {
-            const server = document.getElementById('ntpServer').value.trim();
-            if (!server) {
-                alert('请先设置NTP服务器地址');
-                return;
-            }
-            
-            manualSyncBtn.textContent = '同步中...';
-            manualSyncBtn.disabled = true;
-            
-            try {
-                const newTime = await syncWithNTP(server);
-                alert(`时间同步成功！\n新的系统时间：${newTime.toLocaleString()}`);
-            } catch (error) {
-                alert('时间同步失败：' + error.message);
-            }
-            
-            manualSyncBtn.textContent = '立即同步';
-            manualSyncBtn.disabled = false;
-        });
-
-        // 自动同步定时器
-        let syncTimer = null;
-
-        function startAutoSync() {
-            const settings = loadSettings();
-            
-            if (syncTimer) {
-                clearInterval(syncTimer);
-            }
-            
-            if (settings.autoSync && settings.ntpServer) {
-                // 先立即同步一次
-                syncWithNTP(settings.ntpServer).catch(console.error);
-                
-                // 然后设置定时器
-                syncTimer = setInterval(async () => {
-                    try {
-                        await syncWithNTP(settings.ntpServer);
-                        console.log('自动同步完成');
-                    } catch (error) {
-                        console.error('自动同步失败:', error);
-                    }
-                }, settings.syncInterval * 60 * 1000);
-            }
-        }
 
         // 页面加载时初始化
         document.addEventListener('DOMContentLoaded', () => {
